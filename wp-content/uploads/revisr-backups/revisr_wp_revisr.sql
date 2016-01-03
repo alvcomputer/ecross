@@ -19,12 +19,12 @@ CREATE TABLE `wp_revisr` (
   `event` varchar(42) NOT NULL,
   `user` varchar(60) DEFAULT NULL,
   UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `wp_revisr` WRITE;
 /*!40000 ALTER TABLE `wp_revisr` DISABLE KEYS */;
-INSERT INTO `wp_revisr` VALUES (1,'2016-01-03 13:37:45','Successfully created a new repository.','init','vramh');
+INSERT INTO `wp_revisr` VALUES (1,'2016-01-03 13:37:45','Successfully created a new repository.','init','vramh'),(2,'2016-01-03 13:49:50','Successfully imported the database. ','import','vramh'),(3,'2016-01-03 13:50:09','Error pushing changes to the remote repository.','error','vramh'),(4,'2016-01-03 13:53:49','Successfully pushed 3 commits to origin/master.','push','vramh');
 /*!40000 ALTER TABLE `wp_revisr` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
